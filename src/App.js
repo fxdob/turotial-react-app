@@ -24,7 +24,7 @@ class App extends Component {
     </div>
   )
 }
-}
+
 
 
 /*class App extends Component {
