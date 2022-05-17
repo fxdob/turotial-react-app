@@ -3,7 +3,7 @@ import Table from './Table'
 import Form from './Form'
 
 class App extends Component {
-  state = { characters: [], 
+  state = { characters: [], }
   //const { characters } = this.state
   removeCharacter = (index) => {
     const {characters} = this.state
