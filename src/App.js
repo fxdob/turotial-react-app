@@ -13,6 +13,7 @@ class App extends Component {
     })
   }
 }
+}
 
 render() {
     const { characters } = this.state
