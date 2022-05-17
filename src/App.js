@@ -4,6 +4,12 @@ import Form from './Form'
 
 class App extends Component {
   state = {characters:[],}
+  return (
+    <div className="container">
+      <Table characterData={characters} removeCharacter={this.removeCharacter} />
+      <Form />
+    </div>
+  )
   removeCharacter = index => {
       const {characters} = this.state
       this.setState({
@@ -12,12 +18,6 @@ class App extends Component {
             }),
         })
   }
-  return (
-    <div className="container">
-      <Table characterData={characters} removeCharacter={this.removeCharacter} />
-      <Form />
-    </div>
-  )
 }
 
 export default App
