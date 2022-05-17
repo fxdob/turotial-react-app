@@ -4,12 +4,12 @@ import Form from './Form'
 
 class App extends Component {
   state = {characters:[],}
-  return (
+  /*return (
     <div className="container">
       <Table characterData={characters} removeCharacter={this.removeCharacter} />
       <Form />
     </div>
-  )
+  )*/
   removeCharacter = index => {
       const {characters} = this.state
       this.setState({
