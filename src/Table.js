@@ -32,7 +32,7 @@ const Table = (props) => {
   return (
        <table>
        <TableHeader />
-       <TableBody characterData={characterData} removeCharacter={removeCharacter} />7
+       <TableBody characterData={characterData} removeCharacter={removeCharacter} />
        </table>
     )
   }
