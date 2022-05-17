@@ -3,13 +3,40 @@ import Table from './Table'
 import Form from './Form'
 
 class App extends Component {
-  state = {characters:[],}
-  /*return (
+  state = {
+    characters: [],
+  }
+  removeCharacter = (index) => {
+  const {characters} = this.state
+
+  this.setState({
+    characters: characters.filter((character, i) => {
+      return i !== index
+    }),
+  })
+  }
+  render() {
+  const { characters } = this.state
+
+  return (
+    <div className="container">
+      <Table characterData={characters} removeCharacter={this.removeCharacter} />
+    </div>
+  )
+}
+}
+
+
+/*class App extends Component {
+  state = {
+    characters:[],
+  }
+  return (
     <div className="container">
       <Table characterData={characters} removeCharacter={this.removeCharacter} />
       <Form />
     </div>
-  )*/
+  )
   removeCharacter = index => {
       const {characters} = this.state
       this.setState({
@@ -18,6 +45,6 @@ class App extends Component {
             }),
         })
   }
-}
+}*/
 
 export default App
