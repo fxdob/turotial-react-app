@@ -12,7 +12,9 @@ class App extends Component {
       }),
     })
   }
-  render() {
+}
+
+render() {
     const { characters } = this.state
 
     return (
@@ -21,8 +23,6 @@ class App extends Component {
       </div>
     )
   }
-}
-
 
 
 export default App
