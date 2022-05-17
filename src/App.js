@@ -23,13 +23,11 @@ class App extends Component {
 
     render() {
         const { characters } = this.state;
-        
         return (
-            return (
-              <div className="container">
+            <div className="container">
                 <Table characterData={characters} removeCharacter={this.removeCharacter} />
                 <Form />
-              </div>
+            </div>
         );
     }
 }
